@@ -1,60 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
+Student Habit Tracker
 
-<h1>Student Habit Tracker</h1>
-<p>A simple console-based Java application to help students build and track daily habits.</p>
+A simple console-based Java application to help students build and track daily habits. Add habits, mark them as completed, view your habit list, and generate a quick progress report — all from a menu-driven command-line interface.
 
-<h2>Features</h2>
-<ul>
-  <li>Add Habit</li>
-  <li>Delete Habit</li>
-  <li>View Habits</li>
-  <li>Mark Habit Completed</li>
-  <li>View Report</li>
-  <li>Exit</li>
-</ul>
-
-<h2>Project Structure</h2>
-<pre>
+Features
+Add Habit – Create a new habit to track
+Delete Habit – Remove a habit you no longer want to track
+View Habits – List all habits you're currently tracking
+Mark Habit Completed – Mark a habit as done for the day
+View Report – See a summary report of your habit progress
+Exit – Close the application
+Project Structure
 Java-Project/
-HabitTrackerMain.java   (entry point with the menu)
- Habit.java              (habit model class)
- HabitService.java       (add/delete/view/mark complete)
- ReportService.java      (generates the progress report)
- README.md
-</pre>
-
-<h2>Requirements</h2>
-<p>JDK 8 or higher</p>
-
-<h2>Getting Started</h2>
-<pre>
+├── HabitTrackerMain.java   # Entry point with the interactive menu
+├── Habit.java              # Habit model class
+├── HabitService.java       # Business logic for managing habits (add/delete/view/mark complete)
+├── ReportService.java      # Generates and displays the habit progress report
+└── README.md
+Requirements
+Java Development Kit (JDK) 8 or higher
+Getting Started
+1. Clone the repository
+bash
 git clone https://github.com/Abhinav10067/Java-Project.git
 cd Java-Project
+2. Compile the project
+bash
 javac *.java
+3. Run the application
+bash
 java HabitTrackerMain
-</pre>
+Usage
 
-<h2>Usage</h2>
-<pre>
- Habit Tracker 
+Once running, you'll see a menu like this:
+
+===== Habit Tracker =====
 1. Add Habit
 2. Delete Habit
 3. View Habits
 4. Mark Habit Completed
 5. View Report
 6. Exit
-</pre>
+Enter your choice:
 
-<h2>Tech Stack</h2>
-<p>Java, Command-line interface</p>
+Enter the number corresponding to the action you want to perform, and follow the on-screen prompts (e.g., entering a habit name).
 
-<h2>Author</h2>
-<p><a href="https://github.com/Abhinav10067">Abhinav10067</a></p>
+Example
+Enter your choice: 1
+Enter habit name: Read for 30 minutes
 
-</body>
-</html>
+Enter your choice: 4
+Enter habit name to mark complete: Read for 30 minutes
+
+Enter your choice: 5
+Tech Stack
+Language: Java
+Interface: Command-line (CLI)
+
+
